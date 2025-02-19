@@ -1,0 +1,391 @@
+#API授权验证
+secret: w3601503
+
+#SOCKS/HTTP代理验证
+#authentication:
+#- lswm:3313033
+mixed-port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: :9090
+dns:
+  enabled: true
+  listen: 0.0.0.0:1053
+  ipv6: true
+  default-nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
+    - 119.29.29.29
+    - 180.76.76.76
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.localdomain"
+    - "*.example"
+    - "*.invalid"
+    - "*.localhost"
+    - "*.test"
+    - "*.local"
+    - "*.home.arpa"
+    - router.asus.com
+    - localhost.sec.qq.com
+    - localhost.ptlogin2.qq.com
+    - +.msftconnecttest.com
+tun:
+  enable: true
+  stack: system
+  auto-route: true
+  auto-detect-interface: true
+  dns-hijack:
+    - 114.114.114.114
+    - 180.76.76.76
+    - 119.29.29.29
+    - 223.5.5.5
+    - 8.8.8.8
+    - 8.8.4.4
+    - 1.1.1.1
+    - 1.0.0.1
+proxies:
+
+#----------------------------------------------------------------
+#甲骨文东京reality--------------------------------
+#----------------------------------------------------------------
+
+ #- {"name":"rea-arm2","type":"vless","server":"arm2.870710.xyz","port":35137,"udp":true,"uuid":"fd72ce0f-bf8f-454f-b3e1-b75678fefd48","tls":true,"servername":"blog-rea.870710.xyz","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"VcqHivYGGoBkcxOI6cSSjQmneltstkb2OhvO53dyhEM","short-id":"6d82b586"},"client-fingerprint":"random"}
+
+#--------------------------------
+#甲骨文东京hy2
+#--------------------------------
+  - {"name":"Hy2-Tokyo-amd2","type":"hysteria2","server":"amdv4.870710.xyz","port":38788,"password":"MyHy2+3313033-jpamd","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"Hy2-Tokyo-arm1","type":"hysteria2","server":"armv4.870710.xyz","port":38788,"password":"MyHy2+3313033-jparm","sni":"www.bing.com","skip-cert-verify":true}
+
+#--------------------------------
+#甲骨文东京tuic
+#--------------------------------
+  - {"name":"arm1-tuic","type":"tuic","server":"armv4.870710.xyz","port":39234,"password":"","uuid":"19389f45-9b2f-4fb6-a63d-4821f0f5b0f7","alpn":["h3"],"skip-cert-verify":true}
+  - {"name":"amd-tuic","type":"tuic","server":"amdv4.870710.xyz","port":39234,"password":"","uuid":"19389f45-9b2f-4fb6-a63d-4821f0f5b0f7","alpn":["h3"],"skip-cert-verify":true}
+  - {"name":"v6arm1-tuic","type":"tuic","server":"armv6.870710.xyz","port":39234,"password":"","uuid":"19389f45-9b2f-4fb6-a63d-4821f0f5b0f7","alpn":["h3"],"skip-cert-verify":true}
+  - {"name":"v6amd-tuic","type":"tuic","server":"amdv6.870710.xyz","port":39234,"password":"","uuid":"19389f45-9b2f-4fb6-a63d-4821f0f5b0f7","alpn":["h3"],"skip-cert-verify":true}
+#-----------------------------------
+#甲骨文东京ss
+#-----------------------------------
+  - {"name":"v6arm1-ss","type":"ss","server":"armv6.870710.xyz","port":31304,"password":"SsR+3313033-jparm","cipher":"aes-256-gcm"}
+  - {"name":"v6amd-ss","type":"ss","server":"amdv6.870710.xyz","port":31304,"password":"SsR+3313033-jpamd","cipher":"aes-256-gcm"}
+
+#--------------------------------
+#甲骨文v6出站
+#--------------------------------
+  - {"name":"rea-amd2-v6","type":"vless","server":"v6arm3.870710.xyz","port":35137,"udp":true,"uuid":"fd72ce0f-bf8f-454f-b3e1-b75678fefd48","tls":true,"servername":"blog-rea.870710.xyz","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"VcqHivYGGoBkcxOI6cSSjQmneltstkb2OhvO53dyhEM","short-id":"6d82b586"},"client-fingerprint":"random"}
+  - {"name":"rea-arm1-v6","type":"vless","server":"v6arm1.870710.xyz","port":39466,"udp":true,"uuid":"dd0e0f67-919d-49db-c3a1-6e026420708b","tls":true,"servername":"blog-rea.870710.xyz","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"VcqHivYGGoBkcxOI6cSSjQmneltstkb2OhvO53dyhEM","short-id":"6d82b586"},"client-fingerprint":"random"}
+  - {"name":"Hy2-Tokyo-amd2-v6","type":"hysteria2","server":"amdv6.870710.xyz","port":38788,"password":"MyHy2+3313033-jpamd","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"Hy2-Tokyo-arm1-v6","type":"hysteria2","server":"armv6.870710.xyz","port":38788,"password":"MyHy2+3313033-jparm","sni":"www.bing.com","skip-cert-verify":true}
+#-------------------------------------------------------------------
+#波兰节点-serv00-------------------
+#------------------------------------------------------------------
+  - {"name":"🇵🇱 pol-Hy2","type":"hysteria2","server":"pol0.0000002.best","port":35942,"password":"4a07ca91-69e2-4b48-a592-5308c7ff55ad", "auth":"4a07ca91-69e2-4b48-a592-5308c7ff55ad","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"🇵🇱 pol1-Hy2","type":"hysteria2","server":"pol1.0000002.best","port":31651,"password":"f0ae7bec-c14c-4447-91e5-d636265092d4", "auth":"f0ae7bec-c14c-4447-91e5-d636265092d4","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"🇵🇱 pol13-Hy2","type":"hysteria2","server":"pol13.0000002.best","port":4029,"password":"be758973-186d-46fe-8aa4-e017134fa291", "auth":"be758973-186d-46fe-8aa4-e017134fa291","sni":"www.bing.com","skip-cert-verify":true}
+
+#claw分组--------------------------------
+  - {"name":"🇸🇬 Hysteria2","type":"hysteria2","server":"claw4.870710.xyz","port":38788,"password":"MyHy2+3313033","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"🇸🇬 Shadowsocks","type":"ss","server":"claw6.870710.xyz","port":31304,"password":"Ss+3313033","cipher":"aes-256-gcm"}
+  - {"name":"🇸🇬 Tuic","type":"tuic","server":"claw4.870710.xyz","port":39234,"password":"","uuid":"19389f45-9b2f-4fb6-a63d-4821f0f5b0f7","alpn":["h3"],"skip-cert-verify":true}
+
+#---------------------中转arm1---------------------------------------
+#------------------中转arm2--------------------------------------
+
+
+#-----------------------cf应急节点-------------------------------------------
+  - {"name":"🇺🇸 CloudFlare 01","type":"vless","server":"www.visa.com.sg","port":443,"uuid":"613ea2f0-45a9-4574-9529-d623f67ac6a6","tls":true,"servername":"yyl-v.870710.xyz","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"yyl-v.870710.xyz"}},"client-fingerprint":"randomized"}
+  - {"name":"🇺🇸 CloudFlare 02","type":"vless","server":"www.visa.com.br","port":443,"uuid":"613ea2f0-45a9-4574-9529-d623f67ac6a6","tls":true,"servername":"yyl-v.870710.xyz","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"yyl-v.870710.xyz"}},"client-fingerprint":"randomized"}
+  - {"name":"🇺🇸 CloudFlare 03","type":"vless","server":"usa.visa.com","port":443,"uuid":"613ea2f0-45a9-4574-9529-d623f67ac6a6","tls":true,"servername":"vls.3601503.eu.org","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"vls.3601503.eu.org"}},"client-fingerprint":"random"}
+  - {"name":"🇺🇸 CloudFlare 04","type":"vless","server":"www.visa.com","port":443,"uuid":"613ea2f0-45a9-4574-9529-d623f67ac6a6","tls":true,"servername":"vls.3601503.eu.org","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"vls.3601503.eu.org"}},"client-fingerprint":"random"}
+  - {"name":"🇺🇸 CloudFlare 05","type":"vless","server":"time.is","port":443,"uuid":"613ea2f0-45a9-4574-9529-d623f67ac6a6","tls":true,"servername":"vless.0000002.best","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"vless.0000002.best"}},"client-fingerprint":"randomized"}
+  - {"name":"🇺🇸 CloudFlare 06","type":"vless","server":"icook.tw","port":443,"uuid":"613ea2f0-45a9-4574-9529-d623f67ac6a6","tls":true,"servername":"vless.0000002.best","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"vless.0000002.best"}},"client-fingerprint":"random"}
+  - {"name":"🇺🇸 CloudFlare 07","type":"vless","server":"icook.hk","port":443,"uuid":"613ea2f0-45a9-4574-9529-d623f67ac6a6","tls":true,"servername":"vless.0000002.best","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"vless.0000002.best"}},"client-fingerprint":"random"}
+
+#------------------------------------------------------------
+
+##------------------------rn------------------------------------------------------------------
+  - {"name":"🇺🇸 RN-hy2","type":"hysteria2","server":"rn.870710.xyz","port":38788,"password":"MyHy2+3313033-Rn","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"🇺🇸 RN-tuic","type":"tuic","server":"rn.870710.xyz","port":36336,"password":"","uuid":"19389f45-9b2f-4fb6-a63d-4821f0f5b0f7","alpn":["h3"],"skip-cert-verify":true}
+  - {"name":"🇺🇸 RN-rea","type":"vless","server":"rn.870710.xyz","port":35137,"udp":true,"uuid":"fd72ce0f-bf8f-454f-b3e1-b75678fefd48","tls":true,"servername":"www.amazon.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"AFZFkaIP7ealYHxmX1s8MlfhgcO4xohz-TL86WBoRUY"},"client-fingerprint":"chrome"}
+  - {"name":"🇺🇸 RN-hy2z","type":"hysteria2","server":"armv6.870710.xyz","port":23580,"password":"MyHy2+3313033-Rn","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"🇺🇸 RN-tuicz","type":"tuic","server":"armv6.870710.xyz","port":35678,"password":"","uuid":"19389f45-9b2f-4fb6-a63d-4821f0f5b0f7","alpn":["h3"],"skip-cert-verify":true}
+
+#---------------伦敦---------------------------------------------
+  - {"name":"🇬🇧 London-hy2","type":"hysteria2","server":"ld.870710.xyz","port":38788,"password":"MyHy2+3313033-ldamd","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"🇬🇧 London-tuic","type":"tuic","server":"ld.870710.xyz","port":39234,"password":"","uuid":"19389f45-9b2f-4fb6-a63d-4821f0f5b0f7","alpn":["h3"],"skip-cert-verify":true}
+  - {"name":"🇬🇧 London-rea","type":"vless","server":"ld.870710.xyz","port":35137,"udp":true,"uuid":"fd72ce0f-bf8f-454f-b3e1-b75678fefd48","tls":true,"servername":"www.amazon.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"5wbUF3d6Ju4lRt4okzqsJK1GAqlglra7wFeQ9bLcQzs"},"client-fingerprint":"chrome"}
+  - {"name":"🇬🇧 London-hy2-A","type":"hysteria2","server":"lda.870710.xyz","port":38788,"password":"MyHy2+3313033-ldarm","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"🇬🇧 London-tuic-A","type":"tuic","server":"lda.870710.xyz","port":39234,"password":"","uuid":"19389f45-9b2f-4fb6-a63d-4821f0f5b0f7","alpn":["h3"],"skip-cert-verify":true}
+  - {"name":"🇬🇧 London-ss","type":"ss","server":"ldv6.870710.xyz","port":31304,"password":"SsR+3313033-ldamd","cipher":"aes-256-gcm"}
+  - {"name":"🇬🇧 London-ss-A","type":"ss","server":"ldav6.870710.xyz","port":31304,"password":"SsR+3313033-ldarm","cipher":"aes-256-gcm"}
+
+
+#----------------------------------------------------------------
+proxy-groups:
+  - name: 🚀My-Config
+    type: select
+    proxies:
+      - 🇯🇵 Tokyo
+      - 🇰🇷 Seoul
+      - 🇸🇬 Singapore
+      - 🇺🇲 RackNerd
+      - 🇬🇧 London
+      - 🇵🇱 Polska
+      - ☁️ CloudFlare
+      #- 📶 DIRECT
+#----------------------------------------------------------------
+#绿云分组--------------------------------
+#----------------------------------------------------------------
+
+  #- {name: 🇯🇵 G-Cloud,type: select,proxies: [ 🇯🇵 Reality, 🇯🇵 Hysteria2, 🇯🇵 ShadowSocks V6, 🇯🇵 Hysteria2 V6, 🇯🇵 Reality V6]}
+#----------------------------------------------------------------
+#绿云中转分组--------------------------------
+  #- {name: 🔗 Chain,type: select,proxies: [ 🇯🇵 G-ARM1, 🇯🇵 G-ARM2, 🇯🇵 G-ARM3, 🇺🇸 G-Phoenix]}
+
+#---------------------------------------------------------------
+#甲骨文东京reality分组--------------------------------
+#----------------------------------------------------------------
+  - name: 🇯🇵 Tokyo
+    type: load-balance
+    strategy: round-robin
+    url: http://captive.apple.com
+    interval: 180
+    proxies:
+      - Hy2-Tokyo-arm1-v6
+      #- rea-arm1-v6
+      - v6arm1-tuic
+      - v6arm1-ss
+      - Hy2-Tokyo-amd2-v6
+      #- rea-amd2-v6
+      - v6arm1-tuic
+      - v6amd-ss
+
+#----------------------------------------------------------------
+#甲骨文arm2分组--------------------------------
+#----------------------------------------------------------------
+  - name: 🇸🇬 Singapore
+    type: load-balance
+    strategy: round-robin
+    url: http://captive.apple.com
+    interval: 180
+    proxies:
+      - 🇸🇬 Tuic
+      - 🇸🇬 Hysteria2
+      - 🇸🇬 Shadowsocks
+
+#----------------------------------------------------------------
+#甲骨文amd2分组--------------------------------
+#----------------------------------------------------------------
+  - name: 🇰🇷 Seoul
+    type: load-balance
+    strategy: round-robin
+    url: http://captive.apple.com
+    interval: 180
+    proxies:
+      - Hy2-Tokyo-arm1
+      #- rea-arm1
+      - arm1-tuic
+      - Hy2-Tokyo-amd2
+      #- rea-amd2
+      - amd-tuic
+
+#----------------------------------------------------------------
+#甲骨文凤凰城分组--------------------------------
+#----------------------------------------------------------------
+  - name: 🇬🇧 London
+    type: load-balance
+    strategy: round-robin
+    url: http://captive.apple.com
+    interval: 180
+    proxies:
+      - 🇬🇧 London-tuic
+      - 🇬🇧 London-hy2
+      - 🇬🇧 London-tuic-A
+      - 🇬🇧 London-hy2-A
+      - 🇬🇧 London-ss-A
+      - 🇬🇧 London-ss
+      #- 🇬🇧 London-rea
+
+#----------------------------------------------------------------
+#波兰serv00分组--------------------------------
+#----------------------------------------------------------------
+  - {name: 🇵🇱 Polska,type: load-balance,strategy: round-robin,url: http://captive.apple.com,interval: 180,proxies: [ 🇵🇱 pol-Hy2, 🇵🇱 pol1-Hy2, 🇵🇱 pol13-Hy2]}
+  - name: 🇺🇲 RackNerd
+    type: load-balance
+    strategy: round-robin
+    url: http://captive.apple.com
+    interval: 180
+    proxies:
+      - 🇺🇸 RN-hy2
+      - 🇺🇸 RN-tuic
+      - 🇺🇸 RN-hy2z
+      - 🇺🇸 RN-tuicz
+      #- 🇺🇸 RN-rea
+
+#----------------------------------------------------------------
+
+  - name: ☁️ CloudFlare
+    type: load-balance
+    strategy: round-robin
+    url: http://captive.apple.com
+    interval: 180
+    proxies:
+      - 🇺🇸 CloudFlare 01
+      - 🇺🇸 CloudFlare 02
+      - 🇺🇸 CloudFlare 03
+      - 🇺🇸 CloudFlare 04
+      - 🇺🇸 CloudFlare 05
+      - 🇺🇸 CloudFlare 06
+      - 🇺🇸 CloudFlare 07
+
+
+
+#-----------------------------------------------------------------
+  #- {name: 📶 DIRECT,type: select,proxies: [DIRECT, REJECT]}
+#----------------------------------------------------------------
+rule-providers:
+  reject:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
+    path: ./ruleset/reject.yaml
+    interval: 86400
+  icloud:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt
+    path: ./ruleset/icloud.yaml
+    interval: 86400
+  apple:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt
+    path: ./ruleset/apple.yaml
+    interval: 86400
+  google:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt
+    path: ./ruleset/google.yaml
+    interval: 86400
+  proxy:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt
+    path: ./ruleset/proxy.yaml
+    interval: 86400
+  direct:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt
+    path: ./ruleset/direct.yaml
+    interval: 86400
+  private:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt
+    path: ./ruleset/private.yaml
+    interval: 86400
+  gfw:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt
+    path: ./ruleset/gfw.yaml
+    interval: 86400
+  tld-not-cn:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt
+    path: ./ruleset/tld-not-cn.yaml
+    interval: 86400
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt
+    path: ./ruleset/telegramcidr.yaml
+    interval: 86400
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt
+    path: ./ruleset/cncidr.yaml
+    interval: 86400
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt
+    path: ./ruleset/lancidr.yaml
+    interval: 86400
+  applications:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt
+    path: ./ruleset/applications.yaml
+    interval: 86400
+  giffgaff:
+    type: http
+    behavior: classical
+    format: text
+    url: https://git.0000002.best/https://raw.githubusercontent.com/lswmxl/rules/refs/heads/master/mihomo/geo/geosite/classical/giffgaff.yaml$0
+    path: ./ruleset/giffgaff.yaml
+    interval: 86400
+rules:
+#  - PROCESS-NAME,WeChat.exe,🇯🇵 G-ARM3
+#  - PROCESS-NAME,WeChat,🇯🇵 G-ARM3
+#  - PROCESS-NAME,微信,🇯🇵 G-ARM3
+  - DOMAIN-SUFFIX,*.huyacom,DIRECT
+  - DOMAIN-SUFFIX, gspe1-ssl.ls.apple.com,🇬🇧 London
+  - IP-CIDR,87.194.0.0/16,🇬🇧 London
+  - DOMAIN-SUFFIX,v2ex,🚀My-Config
+  - DOMAIN-SUFFIX,douyu,DIRECT
+  - DOMAIN-SUFFIX,bilibili,DIRECT
+  - RULE-SET,applications,DIRECT
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com,🇬🇧 London
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - RULE-SET,private,DIRECT
+  - RULE-SET,reject,REJECT
+  - RULE-SET,icloud,DIRECT
+  - RULE-SET,apple,DIRECT
+  - RULE-SET,google,🚀My-Config
+  - RULE-SET,proxy,🚀My-Config
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,lancidr,DIRECT
+  - RULE-SET,cncidr,DIRECT
+  - RULE-SET,telegramcidr,🚀My-Config
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,🚀My-Config
+ # - DOMAIN-SUFFIX,myqcloud.com,♻️ 自动选择
+ # - DOMAIN-SUFFIX,qlogo.cn,♻️ 自动选择
+ # - DOMAIN-SUFFIX,ip138.com,♻️ 自动选择
+ # - DOMAIN-SUFFIX,qpic.cn,♻️ 自动选择
+ # - DOMAIN-SUFFIX,qq.com,♻️ 自动选择
+ # - DOMAIN-SUFFIX,servicewechat.com,♻️ 自动选择
+ # - DOMAIN-SUFFIX,tencent-cloud.com,♻️ 自动选择
+ # - DOMAIN-SUFFIX,tencent-cloud.net,♻️ 自动选择
+ # - DOMAIN-SUFFIX,tencent.com,♻️ 自动选择
+ # - DOMAIN-SUFFIX,tencentcs.com,♻️ 自动选择
+ # - DOMAIN-SUFFIX,tenpay.com,♻️ 自动选择
+ # - DOMAIN-SUFFIX,wechat.com,♻️ 自动选择
+ # - DOMAIN-SUFFIX,wechatlegal.net,♻️ 自动选择
+  #- DOMAIN-SUFFIX,wechatpay.com,♻️ 自动选择
+ # - DOMAIN-SUFFIX,weixin.com,♻️ 自动选择
+ # - DOMAIN-SUFFIX,weixinbridge.com,♻️ 自动选择
+  #- DOMAIN-SUFFIX,weixinsxy.com,♻️ 自动选择
+ # - IP-CIDR,101.32.104.4/32,♻️ 自动选择
+ # - IP-CIDR,101.32.104.41/32,♻️ 自动选择
+ # - IP-CIDR,101.32.104.56/32,♻️ 自动选择
+ # - IP-CIDR,101.32.118.25/32,♻️ 自动选择
+ # - IP-CIDR,101.32.133.16/32,♻️ 自动选择
+ # - IP-CIDR,101.32.133.53/32,♻️ 自动选择
+  #- IP-CIDR,101.32.133.209/32,♻️ 自动选择
+ # - IP-CIDR,129.226.3.47/32,♻️ 自动选择
+#  - IP-CIDR,129.226.107.244/32,♻️ 自动选择
+#  - DOMAIN-SUFFIX,gtimg.cn,♻️ 自动选择
+#  - IP-CIDR,203.205.192.0/18,♻️ 自动选择
