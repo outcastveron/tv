@@ -17,7 +17,6 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-proxies:
   - name: "[Vless] Vtwo美国-VLESS_TCP/TLS_Vision"
     type: vless
     server: usvtwo.duckking.cc
