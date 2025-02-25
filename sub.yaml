@@ -1,0 +1,147 @@
+proxies:
+  - name: "[Vless] Vtwo美国-VLESS_TCP/TLS_Vision"
+    type: vless
+    server: usvtwo.duckking.cc
+    port: 23586
+    client-fingerprint: chrome
+    uuid: Vtwo美国
+    tls: true
+    tfo: true
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    servername: usvtwo.duckking.cc
+    network: tcp
+    udp: true
+
+  - name: "[Vless] rn美国-VLESS_Reality_Vision"
+    type: vless
+    server: 104.168.43.162
+    port: 13313
+    reality-opts:
+      public-key: vTNe-PtSwTuIydWsRFyLetX5r8jT8AZRi8noegrkKX0
+      short-id: "6ba85179e30d4fc2"
+    client-fingerprint: chrome
+    uuid: rn美国
+    tls: true
+    tfo: true
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    servername: www.swift.com
+    network: tcp
+    udp: true
+
+  - name: "[Vless] rn美国-VLESS_TCP/TLS_Vision"
+    type: vless
+    server: usrn.duckking.cc
+    port: 10228
+    client-fingerprint: chrome
+    uuid: rn美国
+    tls: true
+    tfo: true
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    servername: usrn.duckking.cc
+    network: tcp
+    udp: true
+
+  - name: "[Vless] HK节点-VLESS_Reality_gPRC"
+    type: vless
+    server: 103.244.91.236
+    port: 15543
+    reality-opts:
+      public-key: g1GDdzJ_nzEoug1pmBH0EMEvCKYUu_8grc4IOn2EM2k
+      short-id: "6ba85179e30d4fc2"
+    client-fingerprint: chrome
+    uuid: HK节点
+    tls: true
+    tfo: true
+    skip-cert-verify: true
+    servername: www.samsung.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+    udp: true
+
+  - name: "[Vless] rn美国-VLESS_Reality_gPRC"
+    type: vless
+    server: 104.168.43.162
+    port: 26573
+    reality-opts:
+      public-key: vTNe-PtSwTuIydWsRFyLetX5r8jT8AZRi8noegrkKX0
+      short-id: "6ba85179e30d4fc2"
+    client-fingerprint: chrome
+    uuid: rn美国
+    tls: true
+    tfo: true
+    skip-cert-verify: true
+    servername: mensura.cdn-apple.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+    udp: true
+
+  - name: "[Vless] Vtwo美国-VLESS_Reality_Vision"
+    type: vless
+    server: 198.23.135.44
+    port: 11868
+    reality-opts:
+      public-key: 5u6nf3DDSX8MDu5AEuIwIaXHugraSQk_zsYNWzWPnls
+      short-id: "6ba85179e30d4fc2"
+    client-fingerprint: chrome
+    uuid: Vtwo美国
+    tls: true
+    tfo: true
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    servername: s0.awsstatic.com
+    network: tcp
+    udp: true
+
+  - name: "[Vless] Vtwo美国-VLESS_Reality_gPRC"
+    type: vless
+    server: 198.23.135.44
+    port: 32971
+    reality-opts:
+      public-key: 5u6nf3DDSX8MDu5AEuIwIaXHugraSQk_zsYNWzWPnls
+      short-id: "6ba85179e30d4fc2"
+    client-fingerprint: chrome
+    uuid: Vtwo美国
+    tls: true
+    tfo: true
+    skip-cert-verify: true
+    servername: gateway.icloud.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+    udp: true
+
+  - name: "[Vless] HK节点-VLESS_TCP/TLS_Vision"
+    type: vless
+    server: hk.duckking.cc
+    port: 25748
+    client-fingerprint: chrome
+    uuid: HK节点
+    tls: true
+    tfo: true
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    servername: hk.duckking.cc
+    network: tcp
+    udp: true
+
+  - name: "[Vless] HK节点-VLESS_Reality_Vision"
+    type: vless
+    server: 103.244.91.236
+    port: 16374
+    reality-opts:
+      public-key: g1GDdzJ_nzEoug1pmBH0EMEvCKYUu_8grc4IOn2EM2k
+      short-id: "6ba85179e30d4fc2"
+    client-fingerprint: chrome
+    uuid: HK节点
+    tls: true
+    tfo: true
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    servername: d1.awsstatic.com
+    network: tcp
+    udp: true
