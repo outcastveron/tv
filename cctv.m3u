@@ -278,3 +278,9 @@ webview://https://www.gdtv.cn/tvChannelDetail/102
 
 #EXTINF:-1 tvg-name="GRTN教育频道" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/GRTN教育频道.png" group-title="荔枝网",GRTN教育频道
 webview://https://www.gdtv.cn/tvChannelDetail/104
+
+#EXTINF:-1 tvg-name="湖北卫视" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/湖北卫视.png" group-title="长江云",湖北卫视
+webview://https://news.hbtv.com.cn/app/tv/431
+
+#EXTINF:-1 tvg-name="湖北经视" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/湖北卫视.png" group-title="长江云",湖北经视
+webview://https://news.hbtv.com.cn/app/tv/432
