@@ -1,123 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>在线直播</title>
-	<style>
-		body {
-		    margin: 0;
-		    padding: 1rem;
-		    min-height: 100vh;
-		    background-color: #f8f9fa;
-		}
-		
-		.nav-container {
-		    display: grid;
-		    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-		    gap: 15px;
-		    max-width: 1600px;
-		    margin: 0 auto;
-		}
-		
-		.text-link {
-		    display: flex;
-		    align-items: center;
-		    justify-content: center;
-		    padding: 1.5rem;
-		    background: #ffffff;
-		    border-radius: 12px;
-		    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-		    text-decoration: none;
-		    color: #2d3436;
-		    font-size: 1.1em;
-		    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-		    min-height: 80px;
-		    border: 2px solid transparent;
-		    position: relative;
-		    overflow: hidden;
-		}
-		
-		/* 新增悬停效果 */
-		.text-link:hover {
-		    transform: translateY(-5px) rotateX(10deg);
-		    box-shadow: 0 8px 20px rgba(142,55,215,0.4), 
-		                0 0 15px rgba(255,255,255,0.3) inset;
-		    background: linear-gradient(135deg, 
-		              rgba(142,55,215,0.1) 0%,
-		              rgba(255,255,255,0.3) 50%,
-		              rgba(142,55,215,0.1) 100%);
-		    border-image: linear-gradient(45deg, #8e37d7, #6b8dd6, #8e37d7) 1;
-		    animation: borderFlow 1.5s infinite linear;
-		}
-		
-		/* 流光边框动画 */
-		@keyframes borderFlow {
-		    0% { border-image-source: linear-gradient(45deg, #8e37d7, #6b8dd6, #8e37d7) }
-		    50% { border-image-source: linear-gradient(135deg, #6b8dd6, #8e37d7, #6b8dd6) }
-		    100% { border-image-source: linear-gradient(225deg, #8e37d7, #6b8dd6, #8e37d7) }
-		}
-		
-		/* 响应式调整 */
-		@media (max-width: 1024px) {
-		    .nav-container {
-		        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-		    }
-		}
-		
-		@media (max-width: 768px) {
-		    .nav-container {
-		        grid-template-columns: repeat(2, 1fr);
-		        gap: 12px;
-		    }
-		    .text-link {
-		        padding: 1rem;
-		        font-size: 1em;
-		        min-height: 70px;
-		    }
-		    /* 移动端悬停优化 */
-		    .text-link:hover {
-		        transform: translateY(-3px) scale(1.05);
-		        box-shadow: 0 4px 12px rgba(142,55,215,0.3);
-		        animation-duration: 2s;
-		    }
-		}
-		
-		@media (max-width: 480px) {
-		    .nav-container {
-		        grid-template-columns: 1fr;
-		        gap: 10px;
-		    }
-		    .text-link {
-		        padding: 1.2rem;
-		        font-size: 1.05em;
-		        min-height: 60px;
-		    }
-		}
-		
-		@media (max-width: 360px) {
-		    body {
-		        padding: 0.5rem;
-		    }
-		    .text-link {
-		        padding: 1rem;
-		    }
-		}
-	</style>
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6288855147065514" crossorigin="anonymous">
-	</script>
-</head>
-<body>
-	<div class="nav-container">
-		<a href="/daddylive.html" class="text-link">Daddylive Event</a>
-		<a href="/pixelsport.html" class="text-link">Pixelsport</a>
-		<a href="/ppvland.html" class="text-link">Ppvland</a>
-		<a href="/roxiestreams.html" class="text-link">RoxieStreams</a>
-		<a href="/daddylivec.html" class="text-link">Daddylive Channel</a>
-		<a href="/thetvapp.html" class="text-link">theTV</a>
-		<a href="/moveonjoy.html" class="text-link">Moveonjoy</a>
-		<a href="/topembed.html" class="text-link">Topembed</a>
-		<a href="/tvpass.html" class="text-link">TVpass</a>
-	</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>IPTV 导航</title>
+    <style>
+      /* 基础样式 */
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #282c34;
+        color: #fff;
+        font-family: Arial, sans-serif;
+      }
+      .header {
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 1px solid #444;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 2em;
+      }
+      /* 网格布局 */
+      .nav-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+        max-width: 1200px;
+        margin: 30px auto;
+        padding: 0 20px;
+      }
+      /* 导航链接样式 */
+      .nav-item {
+        background-color: #3c4043;
+        border: 1px solid #444;
+        border-radius: 8px;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, background-color 0.3s ease,
+          box-shadow 0.3s ease;
+        text-decoration: none;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        font-size: 1.2em;
+        position: relative;
+      }
+      .nav-item:hover {
+        background-color: #61dafb;
+        transform: translateY(-5px);
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
+      }
+      /* 响应式调整 */
+      @media (max-width: 768px) {
+        .nav-container {
+          grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+          gap: 15px;
+        }
+        .nav-item {
+          height: 80px;
+          font-size: 1em;
+        }
+      }
+      @media (max-width: 480px) {
+        .nav-container {
+          grid-template-columns: 1fr;
+          gap: 10px;
+          padding: 0 10px;
+        }
+        .nav-item {
+          height: 70px;
+        }
+      }
+    </style>
+    <!-- 可根据需要添加广告等脚本 -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6288855147065514"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>IPTV 导航</h1>
+    </div>
+    <div class="nav-container">
+      <a href="/daddylive.html" class="nav-item">Daddylive Event</a>
+      <a href="/pixelsport.html" class="nav-item">Pixelsport</a>
+      <a href="/ppvland.html" class="nav-item">Ppvland</a>
+      <a href="/roxiestreams.html" class="nav-item">RoxieStreams</a>
+      <a href="/thetvapp.html" class="nav-item">theTV</a>
+      <a href="/moveonjoy.html" class="nav-item">Moveonjoy</a>
+      <a href="/topembed.html" class="nav-item">Topembed</a>
+      <a href="/tvpass.html" class="nav-item">TVpass</a>
+    </div>
+  </body>
 </html>
