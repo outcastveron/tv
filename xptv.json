@@ -4,433 +4,205 @@
       "name": "豆瓣电影",
       "type": 3,
       "api": "csp_douban",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fdouban"
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Fdouban"
     },
     {
-      "name": "网盘合集",
+      "name": "WebDav",
       "type": 3,
-      "api": "csp_share",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fshare"
+      "api": "csp_webdav",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Fwebdav"
     },
     {
       "name": "玩偶",
       "type": 3,
       "api": "csp_wogg",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fwogg"
-    },
-    {
-      "name": "木偶",
-      "type": 3,
-      "api": "csp_mogg",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fmogg"
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Fwogg"
     },
     {
       "name": "蜡笔",
       "type": 3,
       "api": "csp_labi",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Flabi"
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Flabi"
     },
     {
-      "name": "闪电",
+      "name": "木偶",
       "type": 3,
-      "api": "csp_sd",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fsd"
+      "api": "csp_muo",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Fmuo"
     },
     {
       "name": "至臻",
       "type": 3,
-      "api": "csp_mihdr",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fmihdr"
+      "api": "csp_zhiz",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Fzhiz"
     },
     {
       "name": "小米",
       "type": 3,
-      "api": "csp_xiaomi",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fxiaomi"
+      "api": "csp_xmi",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Fxmi"
     },
     {
       "name": "多多",
       "type": 3,
-      "api": "csp_duoduo",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fduoduo"
-    },
-    {
-      "name": "六趣",
-      "type": 3,
-      "api": "csp_liuq",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fliuq"
-    },
-    {
-      "name": "虎斑",
-      "type": 3,
-      "api": "csp_hub",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fhub"
-    },
-    {
-      "name": "下饭",
-      "type": 3,
-      "api": "csp_xiaf",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fxiaf"
+      "api": "csp_duo",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Fduo"
     },
     {
       "name": "讴歌",
       "type": 3,
       "api": "csp_ouge",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fouge"
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Fouge"
+    },
+    {
+      "name": "闪电",
+      "type": 3,
+      "api": "csp_sd",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Fsd"
+    },
+    {
+      "name": "虎斑",
+      "type": 3,
+      "api": "csp_hub",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Fhub"
+    },
+    {
+      "name": "下饭",
+      "type": 3,
+      "api": "csp_xiaf",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Fxiaf"
     },
     {
       "name": "二小",
       "type": 3,
-      "api": "csp_erx",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Ferx"
+      "api": "csp_erxiao",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Ferxiao"
+    },
+    {
+      "name": "百家",
+      "type": 3,
+      "api": "csp_baijia",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Fbaijia"
+    },
+    {
+      "name": "大玩偶",
+      "type": 3,
+      "api": "csp_dawanou",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Fdawanou"
+    },
+    {
+      "name": "玩偶叔叔",
+      "type": 3,
+      "api": "csp_woss",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Fwoss"
     },
     {
       "name": "立播",
       "type": 3,
       "api": "csp_libo",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Flibo"
-    },
-    {
-      "name": "在线",
-      "type": 3,
-      "api": "csp_zxzj",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fzxzj"
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Flibo"
     },
     {
       "name": "星剧社",
       "type": 3,
       "api": "csp_star2",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fstar2"
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Fstar2"
     },
     {
-      "name": "影搜",
+      "name": "TGX|天翼",
       "type": 3,
-      "api": "csp_yingso",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fyingso"
+      "api": "csp_tianyi",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Ftianyi"
     },
     {
-      "name": "TG|网盘合集",
+      "name": "TGX|迅雷",
       "type": 3,
-      "api": "csp_wpzyhj",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fwpzyhj"
+      "api": "csp_xunlei",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Fxunlei"
     },
     {
-      "name": "TG|夸克网盘聊天",
+      "name": "TGX|UC",
       "type": 3,
-      "api": "csp_Quark_0",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2FQuark_0"
+      "api": "csp_UC",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2FUC"
     },
     {
-      "name": "TG|夸克云盘盘",
+      "name": "TGX|123",
       "type": 3,
-      "api": "csp_kuakeyun",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fkuakeyun"
+      "api": "csp_123",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2F123"
     },
     {
-      "name": "TG|夸克网盘资源收藏",
+      "name": "TGX|移动",
       "type": 3,
-      "api": "csp_yunpanshare",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fyunpanshare"
+      "api": "csp_yidong",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Fyidong"
     },
     {
-      "name": "TG|夸克云盘综合资源",
+      "name": "TGX|阿里",
       "type": 3,
-      "api": "csp_Quark_Movies",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2FQuark_Movies"
+      "api": "csp_ali",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Fali"
     },
     {
-      "name": "TG|夸克浏览器",
+      "name": "TGX|115",
       "type": 3,
-      "api": "csp_NewQuark",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2FNewQuark"
+      "api": "csp_115",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2F115"
     },
     {
-      "name": "TG|115网盘资源分享群",
+      "name": "TGX|夸克",
       "type": 3,
-      "api": "csp_Mbox115",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2FMbox115"
+      "api": "csp_kuake",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Fkuake"
     },
     {
-      "name": "TG|115分享",
+      "name": "TGX|聚合",
       "type": 3,
-      "api": "csp_Channel_Shares_115",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2FChannel_Shares_115"
+      "api": "csp_tgxjuheqz",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Ftgxjuheqz"
     },
     {
-      "name": "TG|115资源分享",
+      "name": "盘搜",
       "type": 3,
-      "api": "csp_shares_115",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fshares_115"
+      "api": "csp_panso",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Fpanso"
     },
     {
-      "name": "TG|115影视资源分享",
+      "name": "量子采集",
       "type": 3,
-      "api": "csp_guaguale115",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fguaguale115"
+      "api": "csp_rlz",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Frlz"
     },
     {
-      "name": "TG|115影视资源分享2",
+      "name": "暴风资源",
       "type": 3,
-      "api": "csp_hao115",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fhao115"
+      "api": "csp_rbf",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Frbf"
     },
     {
-      "name": "TG|PikPak云盘资源",
+      "name": "极速采集",
       "type": 3,
-      "api": "csp_PikPakShareChannel",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2FPikPakShareChannel"
+      "api": "csp_rjs",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Frjs"
     },
     {
-      "name": "TG|阿里",
+      "name": "旺旺短剧",
       "type": 3,
-      "api": "csp_Aliyun_4K_Movies",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2FAliyun_4K_Movies"
+      "api": "csp_rww",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Frww"
     },
     {
-      "name": "TG|阿里云盘资源",
+      "name": "如意采集",
       "type": 3,
-      "api": "csp_alyp_1",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Falyp_1"
-    },
-    {
-      "name": "TG|阿里云盘资源2",
-      "type": 3,
-      "api": "csp_zaihuayun",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fzaihuayun"
-    },
-    {
-      "name": "TG|阿里云盘资源2",
-      "type": 3,
-      "api": "csp_ikiviyyp",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fikiviyyp"
-    },
-    {
-      "name": "TG|阿里4k高清",
-      "type": 3,
-      "api": "csp_shareAliyun",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2FshareAliyun"
-    },
-    {
-      "name": "TG|云盘盘",
-      "type": 3,
-      "api": "csp_yunpanpan",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fyunpanpan"
-    },
-    {
-      "name": "TG|网盘资源(电影)",
-      "type": 3,
-      "api": "csp_alyp_4K_Movies",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Falyp_4K_Movies"
-    },
-    {
-      "name": "TG|网盘资源(电视剧)",
-      "type": 3,
-      "api": "csp_alyp_TV",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Falyp_TV"
-    },
-    {
-      "name": "TG|网盘资源(动漫)",
-      "type": 3,
-      "api": "csp_alyp_Animation",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Falyp_Animation"
-    },
-    {
-      "name": "TG|UC",
-      "type": 3,
-      "api": "csp_ucpanpan",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fucpanpan"
-    },
-    {
-      "name": "TG|迅雷云盘发布",
-      "type": 3,
-      "api": "csp_xunleibl",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fxunleibl"
-    },
-    {
-      "name": "TG|弯弯字幕组",
-      "type": 3,
-      "api": "csp_wanwansubchat",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fwanwansubchat"
-    },
-    {
-      "name": "TG|移动云盘分享",
-      "type": 3,
-      "api": "csp_ydypzyfx",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fydypzyfx"
-    },
-    {
-      "name": "TG|懒狗",
-      "type": 3,
-      "api": "csp_vip115hot",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fvip115hot"
-    },
-    {
-      "name": "TG|KFC云盘搜",
-      "type": 3,
-      "api": "csp_XiangxiuNB",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2FXiangxiuNB"
-    },
-    {
-      "name": "TG|影巢",
-      "type": 3,
-      "api": "csp_alypzyhzq",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Falypzyhzq"
-    },
-    {
-      "name": "TG|片海拾贝",
-      "type": 3,
-      "api": "csp_MCPH608",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2FMCPH608"
-    },
-    {
-      "name": "TG|资源合集",
-      "type": 3,
-      "api": "csp_yydf_hzl",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fyydf_hzl"
-    },
-    {
-      "name": "TG|LEO网盘",
-      "type": 3,
-      "api": "csp_leoziyuan",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fleoziyuan"
-    },
-    {
-      "name": "TG|资源宇宙",
-      "type": 3,
-      "api": "csp_tgsearchers",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Ftgsearchers"
-    },
-    {
-      "name": "TG|迅雷",
-      "type": 3,
-      "api": "csp_xunleizyfb",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fxunleizyfb"
-    },
-    {
-      "name": "TG|115",
-      "type": 3,
-      "api": "csp_zyfb115",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fzyfb115"
-    },
-    {
-      "name": "TG|uc",
-      "type": 3,
-      "api": "csp_ucwpzy",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fucwpzy"
-    },
-    {
-      "name": "TG|uc",
-      "type": 3,
-      "api": "csp_uczyfb",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fuczyfb"
-    },
-    {
-      "name": "TG|UC夸克",
-      "type": 3,
-      "api": "csp_ucquark",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fucquark"
-    },
-    {
-      "name": "TG|夸克",
-      "type": 3,
-      "api": "csp_kuakezyfb",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fkuakezyfb"
-    },
-    {
-      "name": "TG|天翼",
-      "type": 3,
-      "api": "csp_tyypzhpd",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Ftyypzhpd"
-    },
-    {
-      "name": "TG|天翼",
-      "type": 3,
-      "api": "csp_tianyirigeng",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Ftianyirigeng"
-    },
-    {
-      "name": "TG|天翼",
-      "type": 3,
-      "api": "csp_cloudtianyi",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fcloudtianyi"
-    },
-    {
-      "name": "TG|4K蓝光",
-      "type": 3,
-      "api": "csp_Oscar_4Kmovies",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2FOscar_4Kmovies"
-    },
-    {
-      "name": "TG|动漫ღ漫画",
-      "type": 3,
-      "api": "csp_dianyingshare",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fdianyingshare"
-    },
-    {
-      "name": "TG|阿里云盘",
-      "type": 3,
-      "api": "csp_Aliyundrive_Share_Channel",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2FAliyundrive_Share_Channel"
-    },
-    {
-      "name": "TG|短剧每日更新",
-      "type": 3,
-      "api": "csp_longzbija",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Flongzbija"
-    },
-    {
-      "name": "TG|(无损音乐)频道",
-      "type": 3,
-      "api": "csp_Lossless_Yinyue",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2FLossless_Yinyue"
-    },
-    {
-      "name": "TG|(纪录片)频道",
-      "type": 3,
-      "api": "csp_alyp_JLP",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Falyp_JLP"
-    },
-    {
-      "name": "Test",
-      "type": 3,
-      "api": "csp_iptv10",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fiptv10"
-    },
-    {
-      "name": "三星+",
-      "type": 3,
-      "api": "csp_iptv11",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fiptv11"
-    },
-    {
-      "name": "示例",
-      "type": 3,
-      "api": "csp_example",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fexample"
-    },
-    {
-      "name": "360影视",
-      "type": 3,
-      "api": "csp_movie360",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fmovie360"
-    },
-    {
-      "name": "我是菠菜站",
-      "type": 3,
-      "api": "csp_suoni",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fsuoni"
-    },
-    {
-      "name": "小雅",
-      "type": 3,
-      "api": "csp_xiaoya",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fxiaoya"
+      "api": "csp_rry",
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Frry"
     },
     {
       "name": "推送",
       "type": 3,
       "api": "csp_push_agent",
-      "ext": "http://www2.joylian.com:3000/xptv.js?token=3f316b807fadb48e&api=%2Fvideo%2Fpush_agent"
+      "ext": "https://buye.yichang.eu.org/xptv.js?token=7c43c6435cdb3b30&api=%2Fvideo%2Fpush_agent"
     }
   ]
 }
